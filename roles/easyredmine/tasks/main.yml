@@ -1,0 +1,9 @@
+---
+
+- include: firewall.yml
+
+- include: database.yml
+
+#- include: redmine.yml
+
+- include: system.yml

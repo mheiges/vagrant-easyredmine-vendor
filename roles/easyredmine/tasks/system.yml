@@ -1,0 +1,13 @@
+
+- name: update apt cache
+  apt: update_cache=yes
+  sudo: yes
+
+- name: install system tools
+  apt: name='{{ item }}'
+  sudo: yes
+  with_items:
+    - rsync
+    - strace
+    - nmap
+
